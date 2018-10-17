@@ -1,26 +1,27 @@
 @import "../libs/boostrap/scss/bootstrap.scss";
 
-body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+$ni-color: #250E8A;
+$ni-color-alternative: #00F9F7;
+$white: #FFF !default;
+
+.white {
+  color: $white;
 }
 
-a {
-  color: rgba(#000, 0.7);
-
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
+.top-section{
+  // background-color: $ni-color;
+  .container > .row{
+    min-height: 600px;
+    height: calc(100vh - 56px);
   }
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+.bg-gradient{
+  background: linear-gradient(to top left, $ni-color-alternative, $ni-color);
+}
+
+.img-list {
+  width: 70px;
+  margin-right: 15px;
+  float: left;
 }
