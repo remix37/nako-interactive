@@ -1,0 +1,23 @@
+{
+  "name": "nako-interactive",
+  "homepage": "https://github.com/remix37/nako-interactive",
+  "authors": [
+    "Rigault Rémy <r.rigault@me.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "source/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "boostrap": "bootstrap#^4.1.3",
+    "jquery-3.3.1.slim.min": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+    "popper.min": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+  }
+}
