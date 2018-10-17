@@ -1,0 +1,49 @@
+$green : #A0D468;
+$yellow : #FFD97C;
+$purple : #AC92EC;
+$red : #FC6E51;
+$dark-green : #48CFAD;
+$blue : #5D9CEC;
+
+@mixin ni-position {
+  background-position: bottom right 10px, 0;
+  background-size: auto 100px, auto;
+}
+
+.card {
+  box-shadow: 0 10px 35px rgba($black, 0.10);
+  margin-bottom: 30px;
+  overflow: hidden;
+  .card-header {
+    min-height: 120px;
+    position: relative;
+
+    p {
+      @include vertical-align(absolute);
+    }
+  }
+
+  div[class*="card-bg-"]{
+    color: $white;
+  }
+
+  $colors: $green, $yellow, $purple, $red, $dark-green, $blue;
+  $adjust-hue-colors: adjust-hue($green, 20%), adjust-hue($yellow, 20%), adjust-hue($purple, 20%), adjust-hue($red, 20%), adjust-hue($dark-green, 20%), adjust-hue($blue, 20%);
+
+  @for $i from 1 through length($colors) {
+    .card-bg-#{$i} {
+      background:
+        url('../images/bg-#{$i}.png') no-repeat,
+        linear-gradient(to right, #{nth($colors, $i)}, #{nth($adjust-hue-colors, $i)});
+        @include ni-position();
+
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+        background:
+          url('../images/bg-#{$i}@2x.png') no-repeat,
+          linear-gradient(to right, #{nth($colors, $i)}, #{nth($adjust-hue-colors, $i)});
+          @include ni-position();
+      }
+    }
+  }
+
+}

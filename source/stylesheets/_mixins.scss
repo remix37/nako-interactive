@@ -13,6 +13,9 @@ $navbar-nav-link-padding-x : 1.5rem;
 $nav-link-padding-x : 1.5rem;
 $nav-link-padding-y : 1.5rem;
 
+// Card
+$card-border-width : 0;
+
 @mixin vertical-align($position: relative) {
   position: $position;
   top: 50%;
