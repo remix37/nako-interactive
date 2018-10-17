@@ -1,8 +1,9 @@
+@import "./mixins.scss";
 @import "../libs/boostrap/scss/bootstrap.scss";
 
-$ni-color: #250E8A;
-$ni-color-alternative: #00F9F7;
-$white: #FFF !default;
+// Custom CSS
+@import "./nav.scss";
+@import "./retina.scss";
 
 .white {
   color: $white;
@@ -13,11 +14,32 @@ $white: #FFF !default;
   .container > .row{
     min-height: 600px;
     height: calc(100vh - 56px);
+    padding-top: 88px;
   }
+
+  // position: relative;
+  // bottom: 88px;
+  // z-index: -1;
 }
 
 .bg-gradient{
-  background: linear-gradient(to top left, $ni-color-alternative, $ni-color);
+  background:
+    url('../images/bg.png') repeat-x,
+    linear-gradient(to top left, $ni-color-alternative, $ni-color);
+    background-position: bottom;
+    background-size: auto 100px, auto;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+    background:
+      url('../images/bg@2x.png') repeat-x,
+      linear-gradient(to top left, $ni-color-alternative, $ni-color);
+      background-position: bottom;
+      background-size: auto 100px, auto;
+  }
+}
+
+.bg-gradient-alternative{
+  @include ni-gradient();
 }
 
 .img-list {

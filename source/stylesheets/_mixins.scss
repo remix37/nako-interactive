@@ -1,0 +1,26 @@
+// Colors
+$ni-color: #250E8A;
+$ni-color-alternative: #00F9F7;
+$white: #FFF !default;
+
+// Font
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+// Nav
+$navbar-nav-link-padding-x : 1.5rem;
+$navbar-nav-link-padding-x : 1.5rem;
+$nav-link-padding-x : 1.5rem;
+$nav-link-padding-y : 1.5rem;
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin ni-gradient(){
+  background: linear-gradient(to top left, $ni-color-alternative, $ni-color);
+}
