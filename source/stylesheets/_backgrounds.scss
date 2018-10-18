@@ -1,0 +1,71 @@
+.bg-top-gradient{
+  background:
+    url('../images/bg-bottom.png') repeat-x,
+    linear-gradient(to top left, $ni-color-alternative, $ni-color);
+    background-position: bottom;
+    background-size: auto 100px, auto;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+    background:
+      url('../images/bg-bottom@2x.png') repeat-x,
+      linear-gradient(to top left, $ni-color-alternative, $ni-color);
+      background-position: bottom;
+      background-size: auto 100px, auto;
+  }
+}
+
+.bg-bottom-gradient{
+  background:
+    url('../images/bg-top.png') repeat-x,
+    linear-gradient(to top left, $ni-color-alternative, $ni-color);
+    background-position: top;
+    background-size: auto 100px, auto;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+    background:
+      url('../images/bg-top@2x.png') repeat-x,
+      linear-gradient(to top left, $ni-color-alternative, $ni-color);
+      background-position: top;
+      background-size: auto 100px, auto;
+  }
+}
+
+.bg-gradient-alternative{
+  @include ni-gradient();
+}
+
+.bg-image{
+  background:
+    url('../images/bg-bottom.png') repeat-x,
+    url('../images/bg-ni.png') no-repeat;
+    background-position: bottom, center;
+    background-size: auto 100px, cover;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+    background:
+    url('../images/bg-bottom@2x.png') repeat-x,
+    url('../images/bg-ni@2x.png') no-repeat;
+    background-position: bottom, center;
+    background-size: auto 100px, cover;
+  }
+}
+
+// Values section
+
+.bg-values{
+  background:
+    url('../images/bg-top.png') repeat-x,
+    url('../images/bg-bottom.png') repeat-x;
+    background-position: top, bottom;
+    background-size: auto 100px, auto 100px;
+    background-color: $ni-color;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+    background:
+      url('../images/bg-top@2x.png') repeat-x,
+      url('../images/bg-bottom@2x.png') repeat-x;
+      background-position: top, bottom;
+      background-size: auto 100px, auto 100px;
+      background-color: $ni-color;
+  }
+}

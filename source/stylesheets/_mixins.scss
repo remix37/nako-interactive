@@ -27,3 +27,20 @@ $card-border-width : 0;
 @mixin ni-gradient(){
   background: linear-gradient(to left, $ni-color-alternative, $ni-color);
 }
+
+
+.pt-6 {
+  padding-top: 6rem;
+}
+
+.pb-6 {
+  padding-bottom: 6rem;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
