@@ -25,5 +25,5 @@ $card-border-width : 0;
 }
 
 @mixin ni-gradient(){
-  background: linear-gradient(to top left, $ni-color-alternative, $ni-color);
+  background: linear-gradient(to left, $ni-color-alternative, $ni-color);
 }
