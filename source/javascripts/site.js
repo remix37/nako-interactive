@@ -18,4 +18,9 @@ $(document).ready(function(){
             }
         });
     }
+
+    if(window.location.hash == '#thank-you'){
+  		$('#thank-you').removeClass('d-none');
+  		$('.thank-you-message').removeClass('hide').addClass('show');
+  	}
  });

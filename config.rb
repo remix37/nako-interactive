@@ -17,6 +17,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 # With alternative layout
+page '/contact.html', layout: 'layout-contact'
 # page '/path/to/file.html', layout: 'other_layout'
 
 # Proxy pages

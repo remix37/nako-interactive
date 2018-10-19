@@ -2,53 +2,34 @@
 title : Présentation - Nako interactive
 ---
 
-.top-section.bg-image
-  .container
-    .row.align-items-center
-      .col
-        .text-center.white
-          %h1.mb-4 Agence digitale tournée vers le futur
-          %p Autocryp is the place to buy and sell Bitcoin, Ethereum and various kinds of Digital Assets in Indonesia. Then, book your weekly, bi-weekly or one-off clean online with imminent confirmation. Autocryp is the place to buy and sell Bitcoin, Ethereum and various kinds of Digital Assets in Indonesia. Then, book your weekly, bi-weekly or one-off clean online with imminent confirmation.
-        .row
-          .col.offset-lg-3.offset-md-2
-            .card.text-center
-              %img.img-fluid{:src => image_path('Illustrations/influencer.svg')}/
-              %p Influenceur
-          .col
-            .card.text-center
-              %img.img-fluid{:src => image_path('Illustrations/startup.svg')}/
-              %p Startup
-          .col
-            .card.text-center
-              %img.img-fluid{:src => image_path('Illustrations/enterprise.svg')}/
-              %p Entreprise
-
-          .col-lg-3.col-md-2
+= partial "partials/top-content-alternative.html"
 
 .container.py-5
   .row
-    .col
-      %h1.my-5 Qui sommes-nous ?
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dolor eu tellus rutrum pellentesque at non nibh.
-      %p In vitae nibh sit amet felis elementum ornare euismod eget justo.
-      %p Duis turpis lorem, interdum sed volutpat at, commodo ac sem.
+    .col-lg-6
+      .mb-5
+        %h1.my-5 Qui sommes-nous ?
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dolor eu tellus rutrum pellentesque at non nibh.
+        %p In vitae nibh sit amet felis elementum ornare euismod eget justo.
+        %p Duis turpis lorem, interdum sed volutpat at, commodo ac sem.
 
-    .col
+    .col-lg-6
       %img.img-fluid{:src => image_path('about-us.png'), :srcset => " #{image_path('about-us@2x.png')} 2x, #{image_path('about-us.png')} 1x"}/
 
 
 .values-section.bg-values.pt-6.pb-6
   .container.py-5
     .row
-      .col.white
-        %h1.my-5 Nos valeurs ?
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dolor eu tellus rutrum pellentesque at non nibh.
-        %p In vitae nibh sit amet felis elementum ornare euismod eget justo.
-        %p Duis turpis lorem, interdum sed volutpat at, commodo ac sem.
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dolor eu tellus rutrum pellentesque at non nibh.
-        %p In vitae nibh sit amet felis elementum ornare euismod eget justo.
+      .col-md-6.white
+        .mb-5
+          %h1.my-5 Nos valeurs ?
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dolor eu tellus rutrum pellentesque at non nibh.
+          %p In vitae nibh sit amet felis elementum ornare euismod eget justo.
+          %p Duis turpis lorem, interdum sed volutpat at, commodo ac sem.
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dolor eu tellus rutrum pellentesque at non nibh.
+          %p In vitae nibh sit amet felis elementum ornare euismod eget justo.
 
-      .col
+      .col-md-6
         .card
           .card-header.card-bg-5
             %p Social Media

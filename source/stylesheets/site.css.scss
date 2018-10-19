@@ -18,6 +18,33 @@
     max-height: 840px;
     height: calc(100vh - 56px);
     padding-top: 88px;
+    @include media-breakpoint-down(md) {
+      padding-top: 120px;
+    }
+
+  }
+}
+
+.top-section-contact{
+  .container > .row{
+    padding-top: 88px;
+    padding-bottom: 160px;
+  }
+}
+
+
+.benefit{
+  img {
+    @include media-breakpoint-down(sm) {
+      width: 80px;
+    }
+  }
+
+  p {
+    font-weight: 600;
+    @include media-breakpoint-down(sm) {
+     font-size: 0.8em;
+    }
   }
 }
 

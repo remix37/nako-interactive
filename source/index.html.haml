@@ -2,26 +2,7 @@
 title : Accueil - Nako interactive
 ---
 
-.top-section.bg-top-gradient
-  .container
-    .row.align-items-center
-      .col-12.col-lg-6.white
-        %h1.mb-4 Agence digitale tournée vers le futur
-        %p Autocryp is the place to buy and sell Bitcoin, Ethereum and various kinds of Digital Assets in Indonesia. Then, book your weekly, bi-weekly or one-off clean online with imminent confirmation. Autocryp is the place to buy and sell Bitcoin, Ethereum and various kinds of Digital Assets in Indonesia. Then, book your weekly, bi-weekly or one-off clean online with imminent confirmation.
-      .col-12.col-lg-6
-        .row
-          .col
-            .card.text-center
-              %img.img-fluid{:src => image_path('Illustrations/influencer.svg')}/
-              %p Influenceur
-          .col
-            .card.text-center
-              %img.img-fluid{:src => image_path('Illustrations/startup.svg')}/
-              %p Startup
-          .col
-            .card.text-center
-              %img.img-fluid{:src => image_path('Illustrations/enterprise.svg')}/
-              %p Entreprise
+= partial "partials/top-content-default.html"
 
 .container.py-5
   .row
@@ -84,7 +65,7 @@ title : Accueil - Nako interactive
 
       .col-sm-5.col-md-4
 
-        %a.mb-5.my-sm-5.btn.btn-light.btn-block.btn-lg{:href => "/"} Ecrivez-nous
+        %a.mb-5.my-sm-5.btn.btn-light.btn-block.btn-lg{:href => "/contact"} Ecrivez-nous
 
 .container.py-5
   .row
