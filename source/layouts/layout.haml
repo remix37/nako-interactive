@@ -7,6 +7,7 @@
     / Use the title from a page's frontmatter if it has one
     %title= current_page.data.title || "Nako interactive"
     = stylesheet_link_tag "site"
+    = partial "partials/analyze.html"
     = javascript_include_tag "site"
   %body
 
