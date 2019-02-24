@@ -30,7 +30,6 @@ source/
 .bowerrc
 .bower.json
 .config.rb
-
 ```
 
 ## Install the project and components

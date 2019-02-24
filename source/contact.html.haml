@@ -7,7 +7,6 @@ title : Services - Nako interactive
 .container.py-5
   .row
     .col.offset-md-2
-      %p Autocryp is the place to buy and sell Bitcoin, Ethereum and various kinds of Digital Assets in Indonesia.
       #thank-you.d-none
         .thank-you-message.alert.alert-success.alert-dismissible.fade.hide{:role => "alert"}
           Merci de m'avoir contacté, je vous répondrai dès que possible.
@@ -21,11 +20,25 @@ title : Services - Nako interactive
         .row
           .col-12.col-sm-6.col-md-12.col-lg-12.col-xl-6
             .form-group
-              %input.form-control{:name => "Name", :placeholder => "Prénom", :type => "text", :required => ""}/
+
+              %select.form-control{:name => "Enterprise", :required => ""}
+                %option{:disabled => "", :selected => "selected", :value => ""} Quel type d'entreprise ?
+                %option{:value => "1"} Influenceur
+                %option{:value => "2"} Start up
+                %option{:value => "3"} Entreprise
 
           .col-12.col-sm-6.col-md-12.col-lg-12.col-xl-6
             .form-group
-              %input.form-control{:name => "Last name", :placeholder => "Nom", :type => "text", :required => ""}/
+
+              %select.form-control{:name => "Project", :required => ""}
+                %option{:disabled => "", :selected => "selected", :value => ""} Quel type de projet ?
+                %option{:value => "1"} Développement site web
+                %option{:value => "2"} Création graphique
+                %option{:value => "3"} Social media
+                %option{:value => "4"} SEA / SEO
+
+        .form-group
+          %input.form-control{:name => "Phone", :placeholder => "Numéro de téléphone", :type => "phone", :required => ""}/
 
         .form-group
           %input.form-control{:name => "Mail", :placeholder => "Email", :type => "email", :required => ""}/

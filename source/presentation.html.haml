@@ -8,10 +8,29 @@ title : Présentation - Nako interactive
   .row
     .col-lg-6
       .mb-5
-        %h1.my-5 Qui sommes-nous ?
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dolor eu tellus rutrum pellentesque at non nibh.
-        %p In vitae nibh sit amet felis elementum ornare euismod eget justo.
-        %p Duis turpis lorem, interdum sed volutpat at, commodo ac sem.
+        %h1.my-5 Nos engagements
+
+        %p En tant que votre partenaire de confiance, nous nous engageons à
+
+        %ul
+          %li solutions sur-mesure
+          %li accompagnement personnalisé
+          %li créatif
+          %li innovant
+          %li performance
+
+        %p nous vous accompagnons dans le développement de votre stratégie digitale
+
+        %ul
+          %li expertise multicanale
+          %li équipe d’experts
+          %li à vos côtés
+        %p nous vous aidons à atteindre vos objectifs grâce à
+
+        %ul
+          %li e-reputation
+          %li notoriété
+          %li croissance
 
     .col-lg-6
       %img.img-fluid{:src => image_path('about-us.png'), :srcset => " #{image_path('about-us@2x.png')} 2x, #{image_path('about-us.png')} 1x"}/
@@ -20,33 +39,43 @@ title : Présentation - Nako interactive
 .values-section.bg-values.pt-6.pb-6
   .container.py-5
     .row
-      .col-md-6.white
-        .mb-5
+      .col
+        .mb-5.text-center.white
           %h1.my-5 Nos valeurs ?
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dolor eu tellus rutrum pellentesque at non nibh.
-          %p In vitae nibh sit amet felis elementum ornare euismod eget justo.
-          %p Duis turpis lorem, interdum sed volutpat at, commodo ac sem.
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dolor eu tellus rutrum pellentesque at non nibh.
-          %p In vitae nibh sit amet felis elementum ornare euismod eget justo.
+          %p Nous accordons une grande importance à l’humain. L’Innovation, la qualité et la multidisciplinarité sont également les valeurs fondatrice de notre entreprise.
+          %p Nous nous engageons à ce que toutes nos réalisations soient réalisées sur mesure pour satisfaire vos besoins et vos attentes.
 
-      .col-md-6
+    .row
+      .col
+        .card
+          .card-header.card-bg-4
+            %p Rigueur
+          .card-body
+            %p.card-text Nous mettons un point d’honneur à délivrer des prestations les plus pertinentes et cadrées possibles. la qualité ne doit pas être un luxe.
+
+      .col
         .card
           .card-header.card-bg-5
-            %p Social Media
+            %p Efficacité
           .card-body
-            %p.card-text Your account is protected by Multifactor Authentication using a combination of email, SMS and Google Authenticator.
+            %p.card-text Toujours à la recherche des tendances, nous faisons tout pour anticiper et être force de proposition pour vous accompagner au mieux.
 
+      .col
         .card
           .card-header.card-bg-6
-            %p Social Media
+            %p Transparence
           .card-body
-            %p.card-text Your account is protected by Multifactor Authentication using a combination of email, SMS and Google Authenticator.
+            %p.card-text Notre relation professionnelle avec les clients ou prestataires est basée sur la confiance pour avancer ensemble et réaliser de grands projets.
 
 .container.py-5
   .row
     .col.text-center
-      %h1.my-5 Notre approche
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dolor eu tellus rutrum pellentesque at non nibh.
-      %p In vitae nibh sit amet felis elementum ornare euismod eget justo.
-      %p Duis turpis lorem, interdum sed volutpat at, commodo ac sem.
-      %img.img-fluid{:src => image_path('design-thinking.png'), :srcset => " #{image_path('design-thinking@2x.png')} 2x, #{image_path('design-thinking.png')} 1x"}/
+      %h1.my-5 Approche et stratégie
+      %ul
+        %li Analyse / audit
+        %li Recommandation / échange
+        %li Design et développement
+        %li test et Mise en production
+        %li Récupération des données et optimisation
+
+= partial "partials/customers.html"
